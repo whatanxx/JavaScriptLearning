@@ -77,7 +77,7 @@ function canYouFly(nameOfPerson) {
     case typeof nameOfPerson == "string":
       return "Lol you are human being";
     default:
-      throw "Not even a string!";
+      throw new Error("Not even a string!");
   }
 }
 
@@ -89,10 +89,19 @@ try {
     canYouFly("Lana Lang"),
     canYouFly("Chloe Sullivan")
   );
-  console.log(Krypton);
+  // console.log(Krypton);
   console.log(canYouFly(null), canYouFly());
 } catch (error) {
-  console.log(
+  console.error(
+    `${error.name} tried penetrating our firewalls his input was ${error.message}`
+  );
+  console.error(
     "For Rao book what have you typed in there? It is definetely not a string!"
   );
+} finally {
+  console.log(
+    "Finally, we answered all your question about flying, moving to the next topic..."
+  );
 }
+
+console.log("See you next week on another episode of Smallville.");
