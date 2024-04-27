@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body,
+img,
+picture,
+svg,
+video,
+canvas {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+}
