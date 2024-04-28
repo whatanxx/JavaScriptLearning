@@ -22,3 +22,29 @@ canvas {
   background-size: cover;
   background-position: center 20%;
 }
+
+#call-history-container {
+  margin-left: 40%;
+  margin-top: 20%;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  background: black;
+  padding-left: 10px;
+}
+
+#call-history-container ul {
+  margin-left: 10px;
+  list-style: square;
+}
+
+#call-history-container ul li {
+  margin-bottom: 10px;
+}
+
+#call-history-container p {
+  text-align: center;
+  justify-content: center;
+}
